@@ -1,0 +1,28 @@
+{
+  "name": "covid19_govt",
+  "version": "1.0.0",
+  "description": "REST API for covid19_govt project website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev" : "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INDERJEET0202/covid19_govt.git"
+  },
+  "keywords": [],
+  "author": "Indrajit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/INDERJEET0202/covid19_govt/issues"
+  },
+  "homepage": "https://github.com/INDERJEET0202/covid19_govt#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0",
+    "nodemon": "^2.0.15",
+    "validator": "^13.7.0"
+  }
+}
