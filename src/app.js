@@ -66,6 +66,20 @@ app.get("/phone/:phone", async(req, res) => {
     }
 })
 
+app.patch("/users/:id", async(req, res) => {
+    const _id = req.params.id;
+    try{
+        const updateUser = await User.findByIdAndUpdate(_id, req.body, {
+            new: true,
+            runValidators: true
+            
+        });
+        res.send(updateUser);
+    }catch(e){
+        res.status(404).send(e);
+    }
+})
+
 app.delete("/users/:id", async(req, res) => {
     const _id = req.params.id;
     try{
