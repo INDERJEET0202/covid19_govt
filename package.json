@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js",
-    "dev" : "nodemon src/app.js"
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/INDERJEET0202/covid19_govt#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "hbs": "^4.2.0",
     "mongoose": "^6.2.0",
     "nodemon": "^2.0.15",
     "validator": "^13.7.0"
